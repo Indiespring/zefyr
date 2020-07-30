@@ -173,10 +173,6 @@ class InputConnectionController implements TextInputClient {
   }
 
   @override
-  // TODO: implement currentAutofillScope
-  AutofillScope get currentAutofillScope => null;
-
-  @override
   void connectionClosed() {
     if (hasConnection) {
       _textInputConnection.connectionClosedReceived();
